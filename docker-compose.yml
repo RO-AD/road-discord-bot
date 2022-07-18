@@ -1,0 +1,18 @@
+version: "3.7"
+
+services:
+  bot:
+    container_name: road-discord-bot-dev
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    ports:
+      - "15001:15001"
+      - "15002:15002"
+      - "15003:15003"
+      - "15022:22"
+    volumes:
+      - ./:/root
+    restart: always
+
+
