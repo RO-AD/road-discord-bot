@@ -1,18 +1,17 @@
-version: "3.7"
+version: "2"
 
 services:
   bot:
-    container_name: road-discord-bot-dev
+    container_name: road-dicobot
     build:
       context: .
-      dockerfile: ./Dockerfile
     ports:
       - "15001:15001"
       - "15002:15002"
       - "15003:15003"
-      - "15022:22"
+      - "15004:22"
     volumes:
-      - ./:/root
+      - ./:/home/road/ws
     restart: always
 
 
