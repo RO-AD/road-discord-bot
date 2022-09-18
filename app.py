@@ -3,7 +3,8 @@
 import os
 import discord
 from bot.helper import HelperBot
-from bot.challenge import ChallengeAlertBot
+from bot.challenge_crawler import ChallengeAlertBot
+
 
 class RoadBot:
     def __init__(self):
